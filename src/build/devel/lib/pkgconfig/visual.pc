@@ -1,0 +1,8 @@
+prefix=/home/abc/catkin_ws/src/build/devel
+
+Name: visual
+Description: Description of visual
+Version: 0.0.0
+Cflags: -I/home/abc/catkin_ws/src/visual/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs visualization_msgs

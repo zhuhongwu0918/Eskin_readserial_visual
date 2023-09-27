@@ -1,0 +1,19 @@
+# ninja log v5
+0	883	1695029408586548738	build.ninja	31d2d271fcde368d
+0	924	1695029409514545945	serial_port/CMakeFiles/serial_port.dir/src/serial_port.cpp.o	dea10e50adbcd12b
+1	1380	1695105094209742403	build.ninja	31d2d271fcde368d
+17	36	1695105094249743236	serial_port/CMakeFiles/b.dir/src/b.cpp.o	242de030aeaed96d
+1	47	1695105094253743321	serial_port/CMakeFiles/a_exe.dir/src/b.cpp.o	cf7450ae0835ce24
+36	148	1695105094361745571	devel/lib/libb.so	26e9ff831546a131
+5	1098	1695105095313765406	serial_port/CMakeFiles/serial_port.dir/src/serial_port.cpp.o	dea10e50adbcd12b
+6	1099	1695105095313765406	serial_port/CMakeFiles/serial_port.dir/src/decode.cpp.o	7fcecd7c196dc07e
+1	1118	1695105095333765823	serial_port/CMakeFiles/a_exe.dir/src/a.cpp.o	d4ad3673c63852c4
+4	1158	1695105095369766572	serial_port/CMakeFiles/a_exe.dir/src/decode.cpp.o	73050280c3b0f992
+9	1185	1695105095397767154	serial_port/CMakeFiles/decode.dir/src/decode.cpp.o	b64782e62b114109
+1099	1239	1695105095449768238	devel/lib/serial_port/serial_port	47f53b9c635f2699
+1158	1270	1695105095481768904	devel/lib/serial_port/a_exe	dac212d58504c160
+1185	1287	1695105095501769320	devel/lib/libdecode.so	14bd960a8e7c08d7
+5	1304	1695105095517769654	visual/CMakeFiles/mytest.dir/src/test.cpp.o	7c76ec4cf5e51338
+1304	1387	1695105095601771402	devel/lib/visual/mytest	7121352629959d50
+17	1450	1695105095661772651	visual/CMakeFiles/vis_pub_node.dir/src/visualization.cpp.o	10d9559233f2f449
+1450	1529	1695105095741774317	devel/lib/visual/vis_pub_node	c9cbd2cc14301e60

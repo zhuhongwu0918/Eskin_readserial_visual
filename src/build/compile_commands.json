@@ -1,0 +1,97 @@
+[
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/CMakeFiles/gmock.dir/usr/src/gtest/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/gmock/src/gmock-all.cc",
+  "file": "/usr/src/gmock/src/gmock-all.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/CMakeFiles/gmock_main.dir/usr/src/gtest/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/gmock/src/gmock-all.cc",
+  "file": "/usr/src/gmock/src/gmock-all.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/gmock/include -I/usr/src/gmock -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/gmock/src/gmock_main.cc",
+  "file": "/usr/src/gmock/src/gmock_main.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/gtest/src/gtest-all.cc",
+  "file": "/usr/src/gtest/src/gtest-all.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/gtest/include -I/usr/src/gtest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o gtest/gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/gtest/src/gtest_main.cc",
+  "file": "/usr/src/gtest/src/gtest_main.cc"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/a_exe.dir/src/a.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/a.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/a.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/a_exe.dir/src/b.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/b.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/b.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/a_exe.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/serial_port.dir/src/serial_port.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/serial_port.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/serial_port.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/serial_port.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Ddecode_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o serial_port/CMakeFiles/decode.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Db_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o serial_port/CMakeFiles/b.dir/src/b.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/b.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/b.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/mytest.dir/src/test.cpp.o -c /home/abc/catkin_ws/src/visual/src/test.cpp",
+  "file": "/home/abc/catkin_ws/src/visual/src/test.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/vis_pub_node.dir/src/visualization.cpp.o -c /home/abc/catkin_ws/src/visual/src/visualization.cpp",
+  "file": "/home/abc/catkin_ws/src/visual/src/visualization.cpp"
+}
+]

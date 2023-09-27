@@ -1,0 +1,41 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/abc/catkin_ws/src/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/abc/anaconda3/bin/ninja" "cmTC_f391c"
+[1/2] Building C object CMakeFiles/cmTC_f391c.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f391c
+FAILED: cmTC_f391c 
+: && /usr/bin/gcc     CMakeFiles/cmTC_f391c.dir/CheckSymbolExists.c.o  -o cmTC_f391c  -rdynamic && :
+CMakeFiles/cmTC_f391c.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+File /home/abc/catkin_ws/src/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/abc/catkin_ws/src/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/home/abc/anaconda3/bin/ninja" "cmTC_cf634"
+[1/2] Building C object CMakeFiles/cmTC_cf634.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_cf634
+FAILED: cmTC_cf634 
+: && /usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create   CMakeFiles/cmTC_cf634.dir/CheckFunctionExists.c.o  -o cmTC_cf634  -rdynamic -lpthreads && :
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.
+
+
