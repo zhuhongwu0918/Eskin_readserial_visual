@@ -177,7 +177,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(serial_port_EXPORTED_TARGETS "")
+set(serial_port_EXPORTED_TARGETS "serial_port_generate_messages_cpp;serial_port_generate_messages_eus;serial_port_generate_messages_lisp;serial_port_generate_messages_nodejs;serial_port_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${serial_port_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -185,7 +185,7 @@ foreach(t ${serial_port_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs")
+set(depends "roscpp;rospy;std_msgs;message_runtime")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls
@@ -214,7 +214,7 @@ foreach(depend ${depends})
   list(APPEND serial_port_EXPORTED_TARGETS ${${serial_port_dep}_EXPORTED_TARGETS})
 endforeach()
 
-set(pkg_cfg_extras "")
+set(pkg_cfg_extras "serial_port-msg-extras.cmake")
 foreach(extra ${pkg_cfg_extras})
   if(NOT IS_ABSOLUTE ${extra})
     set(extra ${serial_port_DIR}/${extra})

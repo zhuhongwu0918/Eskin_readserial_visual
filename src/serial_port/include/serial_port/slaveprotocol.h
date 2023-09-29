@@ -7,6 +7,7 @@
 using namespace std;
 
 #define RX_BUFFER_SIZE      500
+short hextodec(short x1, int id);
 
 enum
 {
@@ -27,7 +28,13 @@ public:
     static unsigned char check_sum(unsigned char *pData, unsigned short len);          //校验数据
 
     unsigned char aBuffer[RX_BUFFER_SIZE]; 
-    
+///////zhhw
+    public:  
+    //   ros::Publisher pub_;  
+    //   ros::Publisher pub_callback; 
+      ros::Publisher  pub_tactile;
+      ros::Subscriber sub_;  
+
 private:
              //用来存储帧数据的buffer
     unsigned short hPos = 0;            //用来指示当前完整帧的位置，为0时表示当前没有识别到帧数据
@@ -51,3 +58,8 @@ private:
 
 
 int mysum(int x, int y);
+
+// SlaveProtocol::SlaveProtocol(int n, void (SlaveProtocol::*decode_ok)(unsigned char*, short unsigned int), void (SlaveProtocol::*decode_fail)(unsigned char*, short unsigned int)) {  
+//     SlaveProtocol *slavepl = new SlaveProtocol(n, [this](unsigned char* data, short unsigned int length) { (this->*decode_ok)(data, length); }, [this](unsigned char* data, short unsigned int length) { (this->*decode_fail)(data, length); });  
+//     // ...  
+// }

@@ -43,55 +43,85 @@
 
 {
   "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/a_exe.dir/src/a.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/a.cpp",
-  "file": "/home/abc/catkin_ws/src/serial_port/src/a.cpp"
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Dslaveprotocol_EXPORTS -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o serial_port/CMakeFiles/slaveprotocol.dir/src/slaveprotocol.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/slaveprotocol.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/slaveprotocol.cpp"
 },
 
 {
   "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/a_exe.dir/src/b.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/b.cpp",
-  "file": "/home/abc/catkin_ws/src/serial_port/src/b.cpp"
-},
-
-{
-  "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/a_exe.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
-  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
-},
-
-{
-  "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/serial_port.dir/src/serial_port.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/serial_port.cpp",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/serial_port.dir/src/serial_port.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/serial_port.cpp",
   "file": "/home/abc/catkin_ws/src/serial_port/src/serial_port.cpp"
 },
 
 {
   "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o serial_port/CMakeFiles/serial_port.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/serial_port.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
   "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
 },
 
 {
   "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Ddecode_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o serial_port/CMakeFiles/decode.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
-  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/serial_port.dir/src/slaveprotocol.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/slaveprotocol.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/slaveprotocol.cpp"
 },
 
 {
   "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Db_EXPORTS -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -o serial_port/CMakeFiles/b.dir/src/b.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/b.cpp",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Db_EXPORTS -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o serial_port/CMakeFiles/b.dir/src/b.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/b.cpp",
   "file": "/home/abc/catkin_ws/src/serial_port/src/b.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Ddecode_EXPORTS -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g -fPIC   -std=c++11 -o serial_port/CMakeFiles/decode.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/a_exe.dir/src/a.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/a.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/a.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/a_exe.dir/src/b.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/b.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/b.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/a_exe.dir/src/decode.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/decode.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/decode.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"serial_port\\\" -Idevel/include -I../serial_port/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -std=c++11 -o serial_port/CMakeFiles/myprotocol.dir/src/myprotocol.cpp.o -c /home/abc/catkin_ws/src/serial_port/src/myprotocol.cpp",
+  "file": "/home/abc/catkin_ws/src/serial_port/src/myprotocol.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/twomovingarrow.dir/src/twomovingarrow.cpp.o -c /home/abc/catkin_ws/src/visual/src/twomovingarrow.cpp",
+  "file": "/home/abc/catkin_ws/src/visual/src/twomovingarrow.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/cube.dir/src/cube.cpp.o -c /home/abc/catkin_ws/src/visual/src/cube.cpp",
+  "file": "/home/abc/catkin_ws/src/visual/src/cube.cpp"
+},
+
+{
+  "directory": "/home/abc/catkin_ws/src/build",
+  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/pointline.dir/src/pointline.cpp.o -c /home/abc/catkin_ws/src/visual/src/pointline.cpp",
+  "file": "/home/abc/catkin_ws/src/visual/src/pointline.cpp"
 },
 
 {
   "directory": "/home/abc/catkin_ws/src/build",
   "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/mytest.dir/src/test.cpp.o -c /home/abc/catkin_ws/src/visual/src/test.cpp",
   "file": "/home/abc/catkin_ws/src/visual/src/test.cpp"
-},
-
-{
-  "directory": "/home/abc/catkin_ws/src/build",
-  "command": "/usr/bin/g++   -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"visual\\\" -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp  -g   -o visual/CMakeFiles/vis_pub_node.dir/src/visualization.cpp.o -c /home/abc/catkin_ws/src/visual/src/visualization.cpp",
-  "file": "/home/abc/catkin_ws/src/visual/src/visualization.cpp"
 }
 ]

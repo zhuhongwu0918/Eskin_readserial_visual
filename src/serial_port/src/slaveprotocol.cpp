@@ -4,6 +4,8 @@
 // #include <QDebug>
 // #include "/home/abc/Qt/5.10.0/Src/qtbase/include/QtCore/QDebug"
 #include <string.h>
+#include<std_msgs/String.h>
+#include <serial_port/contactpoint.h>  
 
 
 void SlaveProtocol::rx_timerout_callback(const ros::TimerEvent& event)
@@ -17,7 +19,7 @@ void SlaveProtocol::rx_timerout_callback(const ros::TimerEvent& event)
     hPos = 0;
     hFrameLen = 0;
     memset(aBuffer, 0, RX_BUFFER_SIZE);
-    RxTimer.stop();//??????
+    RxTimer.stop();//
 }
 
 char SlaveProtocol::hex2char(unsigned char value)
@@ -94,6 +96,10 @@ SlaveProtocol::SlaveProtocol(ros::NodeHandle &node) : nh_(node)
 **********************************************************************************************************/
 SlaveProtocol::SlaveProtocol(ros::NodeHandle &node, void (*decode_ok)(unsigned char *pData, unsigned short len), void (*decode_fail)(unsigned char *pData, unsigned short len)) : nh_(node)
 {
+    // pub_callback = nh_.advertise<std_msgs::String>("/callback_topic", 1);//zhhw
+    
+    pub_tactile = nh_.advertise<serial_port::contactpoint>("/tactile_data", 10);//zhhw
+ 
     decode_ok_callback = decode_ok;
     decode_fail_callback = decode_fail;
 
@@ -195,7 +201,7 @@ void SlaveProtocol::redecode()
             else                                            //可能存在新一帧数据，需要校验解码
             {
                 cCheckSum = check_sum(&aBuffer[hFindIndex + iHeaderPos], hFrameLen + 1);
-                std::cout<<"check sum : "<<array2hex(&cCheckSum, 1)<<std::endl;
+                // std::cout<<"check sum : "<<array2hex(&cCheckSum, 1)<<std::endl;
                 if(cCheckSum == aBuffer[hFindIndex + iHeaderPos + hFrameLen + 1])     //垃圾堆里找到一帧可用数据
                 {
                     if(((hFindIndex + iHeaderPos) != 0) && (decode_fail_callback != nullptr))      //把失败的数据先响应完
@@ -259,7 +265,7 @@ int SlaveProtocol::decode(unsigned char *pData, unsigned short len)
 {
     RxTimer.stop();
     memcpy(&aBuffer[hBufDataLen], pData, len);
-    std::cout<<"rx data : "<<SlaveProtocol::array2hex(pData, len)<<std::endl;
+    // std::cout<<"rx data : "<<SlaveProtocol::array2hex(pData, len)<<std::endl;
     hBufDataLen += len;
     redecode();
 
@@ -284,6 +290,24 @@ int SlaveProtocol::decode(unsigned char *pData, unsigned short len)
     return res;
 }
 
+short hextodec(short x1, int id)
+{
+    short firstbit =0;
+    firstbit = (x1 & 0x8000) >> 15;
+        if (firstbit == 0) 
+        {  
+        // ROS_INFO("The byte is positive or zero." );
+        // std::cout<<"decode ok x "<<id<<" = " << x1 <<std::endl;
+        // ROS_INFO("Positive: data %d, Number: %d", id ,x1);
+        return x1;
+        } 
+        else if (firstbit == 1){  
+        // ROS_WARN("The byte is negative." );
+        // ROS_INFO("Negative: x %d, Number: %d", id ,x1);
+        // std::cout<<"decode ok x "<<id<<" = " <<std::dec<< x1 <<std::endl;
+        return x1;
+        }
+}
 
 
 // void decode_ok(unsigned char *pData, unsigned short len)
@@ -307,17 +331,17 @@ int SlaveProtocol::decode(unsigned char *pData, unsigned short len)
 
 
 
-int mysum(int x, int y)
-{
-    int a = x;
-    int b = y;
-    return a+b;
-}
+// int mysum(int x, int y)
+// {
+//     int a = x;
+//     int b = y;
+//     return a+b;
+// }
 
 
-unsigned char aRxData[] = {0xA5, 0xD, 0x1, 0xA5, 0x8, 0x2, 0, 0x8, 0, 0x2, 0xFF, 0x3, 0xBB, 0xA5, 0x0, 0x1, 0xA5};
-unsigned char aRxData1[] = {0x5, 0xD, 0x1, 0xA5, 0x8, 0x65, 0, 0x8, 0, 0x2, 0xFF, 0x3, 0xBB, 0xA5, 0xA5, 0xA5, 0xA5};
-unsigned char aRxData2[] = {0x5, 0xD, 0x1, 0xA5, 0x8, 0x65};
+// unsigned char aRxData[] = {0xA5, 0xD, 0x1, 0xA5, 0x8, 0x2, 0, 0x8, 0, 0x2, 0xFF, 0x3, 0xBB, 0xA5, 0x0, 0x1, 0xA5};
+// unsigned char aRxData1[] = {0x5, 0xD, 0x1, 0xA5, 0x8, 0x65, 0, 0x8, 0, 0x2, 0xFF, 0x3, 0xBB, 0xA5, 0xA5, 0xA5, 0xA5};
+// unsigned char aRxData2[] = {0x5, 0xD, 0x1, 0xA5, 0x8, 0x65};
 
 
 

@@ -55,7 +55,9 @@
         "hash_map": "cpp",
         "hash_set": "cpp",
         "string": "cpp",
-        "eigen": "cpp"
+        "eigen": "cpp",
+        "random": "cpp",
+        "*.ipp": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

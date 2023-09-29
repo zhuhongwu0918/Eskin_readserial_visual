@@ -22,12 +22,12 @@ int main(int argc, char **argv)
 
 
 
-    int res = decode(raw[0],raw[1]);
-    std::cout<<"this is decoded:"<<std::dec << res <<std::endl;
+    // int res = decode(raw[0],raw[1]);
+    // std::cout<<"this is decoded:"<<std::dec << res <<std::endl;
 
     int k=13;
     std::cout <<"13%2: " << k/2<<std::endl;
-    std::cout <<"ID: " << (int)(k/2)<<", "<<"data:"<< res<<std::endl;
+    // std::cout <<"ID: " << (int)(k/2)<<", "<<"data:"<< res<<std::endl;
 
   return 0;
 }
