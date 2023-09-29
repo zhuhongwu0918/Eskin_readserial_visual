@@ -143,6 +143,7 @@ include_directories(
 add_executable(cube src/cube.cpp)
 add_executable(pointline  src/pointline.cpp)
 add_executable(twomovingarrow  src/twomovingarrow.cpp)
+add_executable(movingarrows16  src/movingarrows16.cpp)
 add_executable(mytest  src/test.cpp)
 
 ## Rename C++ executable without prefix
@@ -167,6 +168,10 @@ target_link_libraries(pointline
   ${catkin_LIBRARIES}
 )
 target_link_libraries(twomovingarrow
+  ${catkin_LIBRARIES}
+)
+
+target_link_libraries(movingarrows16
   ${catkin_LIBRARIES}
 )
 #############

@@ -641,41 +641,6 @@ build devel/lib/serial_port/myprotocol: CXX_EXECUTABLE_LINKER__myprotocol serial
   TARGET_PDB = myprotocol.dbg
 
 #############################################
-# Custom command for serial_port/CMakeFiles/_serial_port_generate_messages_check_deps_contactpoint
-
-build serial_port/CMakeFiles/_serial_port_generate_messages_check_deps_contactpoint: CUSTOM_COMMAND
-  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py serial_port /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg
-
-#############################################
-# Custom command for devel/share/roseus/ros/serial_port/msg/contactpoint.l
-
-build devel/share/roseus/ros/serial_port/msg/contactpoint.l: CUSTOM_COMMAND /opt/ros/kinetic/lib/geneus/gen_eus.py ../serial_port/msg/contactpoint.msg || beginner_tutorials/std_msgs_generate_messages_eus serial_port/_serial_port_generate_messages_check_deps_contactpoint
-  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg -Iserial_port:/home/abc/catkin_ws/src/serial_port/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p serial_port -o /home/abc/catkin_ws/src/build/devel/share/roseus/ros/serial_port/msg
-  DESC = Generating EusLisp code from serial_port/contactpoint.msg
-  restat = 1
-
-#############################################
-# Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_cpp
-
-build serial_port/CMakeFiles/serial_port_generate_messages_cpp: phony devel/include/serial_port/contactpoint.h || beginner_tutorials/std_msgs_generate_messages_cpp serial_port/_serial_port_generate_messages_check_deps_contactpoint
-
-#############################################
-# Custom command for devel/include/serial_port/contactpoint.h
-
-build devel/include/serial_port/contactpoint.h: CUSTOM_COMMAND /opt/ros/kinetic/lib/gencpp/gen_cpp.py ../serial_port/msg/contactpoint.msg /opt/ros/kinetic/share/gencpp/msg.h.template || beginner_tutorials/std_msgs_generate_messages_cpp serial_port/_serial_port_generate_messages_check_deps_contactpoint
-  COMMAND = cd /home/abc/catkin_ws/src/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg -Iserial_port:/home/abc/catkin_ws/src/serial_port/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p serial_port -o /home/abc/catkin_ws/src/build/devel/include/serial_port -e /opt/ros/kinetic/share/gencpp/cmake/..
-  DESC = Generating C++ code from serial_port/contactpoint.msg
-  restat = 1
-
-#############################################
-# Custom command for devel/lib/python2.7/dist-packages/serial_port/msg/__init__.py
-
-build devel/lib/python2.7/dist-packages/serial_port/msg/__init__.py: CUSTOM_COMMAND /opt/ros/kinetic/lib/genpy/genmsg_py.py devel/lib/python2.7/dist-packages/serial_port/msg/_contactpoint.py || beginner_tutorials/std_msgs_generate_messages_py serial_port/_serial_port_generate_messages_check_deps_contactpoint
-  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/abc/catkin_ws/src/build/devel/lib/python2.7/dist-packages/serial_port/msg --initpy
-  DESC = Generating Python msg __init__.py for serial_port
-  restat = 1
-
-#############################################
 # Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_nodejs
 
 build serial_port/CMakeFiles/serial_port_generate_messages_nodejs: phony devel/share/gennodejs/ros/serial_port/msg/contactpoint.js || beginner_tutorials/std_msgs_generate_messages_nodejs serial_port/_serial_port_generate_messages_check_deps_contactpoint
@@ -689,16 +654,37 @@ build devel/share/gennodejs/ros/serial_port/msg/contactpoint.js: CUSTOM_COMMAND 
   restat = 1
 
 #############################################
-# Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_py
-
-build serial_port/CMakeFiles/serial_port_generate_messages_py: phony devel/lib/python2.7/dist-packages/serial_port/msg/_contactpoint.py devel/lib/python2.7/dist-packages/serial_port/msg/__init__.py || beginner_tutorials/std_msgs_generate_messages_py serial_port/_serial_port_generate_messages_check_deps_contactpoint
-
-#############################################
 # Custom command for devel/lib/python2.7/dist-packages/serial_port/msg/_contactpoint.py
 
 build devel/lib/python2.7/dist-packages/serial_port/msg/_contactpoint.py: CUSTOM_COMMAND /opt/ros/kinetic/lib/genpy/genmsg_py.py ../serial_port/msg/contactpoint.msg || beginner_tutorials/std_msgs_generate_messages_py serial_port/_serial_port_generate_messages_check_deps_contactpoint
   COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg -Iserial_port:/home/abc/catkin_ws/src/serial_port/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p serial_port -o /home/abc/catkin_ws/src/build/devel/lib/python2.7/dist-packages/serial_port/msg
   DESC = Generating Python from MSG serial_port/contactpoint
+  restat = 1
+
+#############################################
+# Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_cpp
+
+build serial_port/CMakeFiles/serial_port_generate_messages_cpp: phony devel/include/serial_port/contactpoint.h || beginner_tutorials/std_msgs_generate_messages_cpp serial_port/_serial_port_generate_messages_check_deps_contactpoint
+
+#############################################
+# Custom command for devel/share/roseus/ros/serial_port/msg/contactpoint.l
+
+build devel/share/roseus/ros/serial_port/msg/contactpoint.l: CUSTOM_COMMAND /opt/ros/kinetic/lib/geneus/gen_eus.py ../serial_port/msg/contactpoint.msg || beginner_tutorials/std_msgs_generate_messages_eus serial_port/_serial_port_generate_messages_check_deps_contactpoint
+  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg -Iserial_port:/home/abc/catkin_ws/src/serial_port/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p serial_port -o /home/abc/catkin_ws/src/build/devel/share/roseus/ros/serial_port/msg
+  DESC = Generating EusLisp code from serial_port/contactpoint.msg
+  restat = 1
+
+#############################################
+# Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_eus
+
+build serial_port/CMakeFiles/serial_port_generate_messages_eus: phony devel/share/roseus/ros/serial_port/msg/contactpoint.l devel/share/roseus/ros/serial_port/manifest.l || beginner_tutorials/std_msgs_generate_messages_eus serial_port/_serial_port_generate_messages_check_deps_contactpoint
+
+#############################################
+# Custom command for devel/share/roseus/ros/serial_port/manifest.l
+
+build devel/share/roseus/ros/serial_port/manifest.l: CUSTOM_COMMAND /opt/ros/kinetic/lib/geneus/gen_eus.py || beginner_tutorials/std_msgs_generate_messages_eus serial_port/_serial_port_generate_messages_check_deps_contactpoint
+  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/abc/catkin_ws/src/build/devel/share/roseus/ros/serial_port serial_port std_msgs
+  DESC = Generating EusLisp manifest code for serial_port
   restat = 1
 
 #############################################
@@ -715,17 +701,31 @@ build devel/share/common-lisp/ros/serial_port/msg/contactpoint.lisp: CUSTOM_COMM
   restat = 1
 
 #############################################
-# Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_eus
+# Custom command for devel/include/serial_port/contactpoint.h
 
-build serial_port/CMakeFiles/serial_port_generate_messages_eus: phony devel/share/roseus/ros/serial_port/msg/contactpoint.l devel/share/roseus/ros/serial_port/manifest.l || beginner_tutorials/std_msgs_generate_messages_eus serial_port/_serial_port_generate_messages_check_deps_contactpoint
+build devel/include/serial_port/contactpoint.h: CUSTOM_COMMAND /opt/ros/kinetic/lib/gencpp/gen_cpp.py ../serial_port/msg/contactpoint.msg /opt/ros/kinetic/share/gencpp/msg.h.template || beginner_tutorials/std_msgs_generate_messages_cpp serial_port/_serial_port_generate_messages_check_deps_contactpoint
+  COMMAND = cd /home/abc/catkin_ws/src/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg -Iserial_port:/home/abc/catkin_ws/src/serial_port/msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p serial_port -o /home/abc/catkin_ws/src/build/devel/include/serial_port -e /opt/ros/kinetic/share/gencpp/cmake/..
+  DESC = Generating C++ code from serial_port/contactpoint.msg
+  restat = 1
 
 #############################################
-# Custom command for devel/share/roseus/ros/serial_port/manifest.l
+# Phony custom command for serial_port/CMakeFiles/serial_port_generate_messages_py
 
-build devel/share/roseus/ros/serial_port/manifest.l: CUSTOM_COMMAND /opt/ros/kinetic/lib/geneus/gen_eus.py || beginner_tutorials/std_msgs_generate_messages_eus serial_port/_serial_port_generate_messages_check_deps_contactpoint
-  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/abc/catkin_ws/src/build/devel/share/roseus/ros/serial_port serial_port std_msgs
-  DESC = Generating EusLisp manifest code for serial_port
+build serial_port/CMakeFiles/serial_port_generate_messages_py: phony devel/lib/python2.7/dist-packages/serial_port/msg/_contactpoint.py devel/lib/python2.7/dist-packages/serial_port/msg/__init__.py || beginner_tutorials/std_msgs_generate_messages_py serial_port/_serial_port_generate_messages_check_deps_contactpoint
+
+#############################################
+# Custom command for devel/lib/python2.7/dist-packages/serial_port/msg/__init__.py
+
+build devel/lib/python2.7/dist-packages/serial_port/msg/__init__.py: CUSTOM_COMMAND /opt/ros/kinetic/lib/genpy/genmsg_py.py devel/lib/python2.7/dist-packages/serial_port/msg/_contactpoint.py || beginner_tutorials/std_msgs_generate_messages_py serial_port/_serial_port_generate_messages_check_deps_contactpoint
+  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/abc/catkin_ws/src/build/devel/lib/python2.7/dist-packages/serial_port/msg --initpy
+  DESC = Generating Python msg __init__.py for serial_port
   restat = 1
+
+#############################################
+# Custom command for serial_port/CMakeFiles/_serial_port_generate_messages_check_deps_contactpoint
+
+build serial_port/CMakeFiles/_serial_port_generate_messages_check_deps_contactpoint: CUSTOM_COMMAND
+  COMMAND = cd /home/abc/catkin_ws/src/build/serial_port && /home/abc/catkin_ws/src/build/catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py serial_port /home/abc/catkin_ws/src/serial_port/msg/contactpoint.msg
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/abc/catkin_ws/src/CMakeLists.txt
