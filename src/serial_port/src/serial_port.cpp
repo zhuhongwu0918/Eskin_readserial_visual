@@ -36,114 +36,114 @@ void decode_ok(unsigned char *pData, unsigned short len)
         x1 = ((short)pData[1] << 8) | pData[2];
         x1 = hextodec(x1, 1);
         y1 = ((short)pData[3] << 8) | pData[4];
-        y1 = hextodec(x1, 1);
+        y1 = hextodec(y1, 1);
         z1 = ((short)pData[5] << 8) | pData[6];
-        z1 = hextodec(x1, 1);
+        z1 = hextodec(z1, 1);
 
         x2 = ((short)pData[7] << 8) | pData[8];
-        x2 = hextodec(x1, 2);
+        x2 = hextodec(x2, 2);
         y2 = ((short)pData[9] << 8) | pData[10];
-        y2 = hextodec(x1, 2);
+        y2 = hextodec(y2, 2);
         z2 = ((short)pData[11] << 8) | pData[12];
-        z2 = hextodec(x1, 2);
+        z2 = hextodec(z2, 2);
 
         x3 = ((short)pData[13] << 8) | pData[14];
-        x3 = hextodec(x1, 3);
+        x3 = hextodec(x3, 3);
         y3 = ((short)pData[15] << 8) | pData[16];
-        y3 = hextodec(x1, 3);
+        y3 = hextodec(y3, 3);
         z3 = ((short)pData[17] << 8) | pData[18];
-        z3 = hextodec(x1, 3);
+        z3 = hextodec(z3, 3);
 
         x4 = ((short)pData[19] << 8) | pData[20];
-        x4 = hextodec(x1, 4);
+        x4 = hextodec(x4, 4);
         y4 = ((short)pData[21] << 8) | pData[22];
-        y4 = hextodec(x1, 4);
+        y4 = hextodec(y4, 4);
         z4 = ((short)pData[23] << 8) | pData[24];
-        z4 = hextodec(x1, 4);
+        z4 = hextodec(z4, 4);
 
         x5 = ((short)pData[25] << 8) | pData[26];
-        x5 = hextodec(x1, 5);
+        x5 = hextodec(x5, 5);
         y5 = ((short)pData[27] << 8) | pData[28];
-        y5 = hextodec(x1, 5);
+        y5 = hextodec(y5, 5);
         z5 = ((short)pData[29] << 8) | pData[30];
-        z5 = hextodec(x1, 5);
+        z5 = hextodec(z5, 5);
         
         x6 = ((short)pData[31] << 8) | pData[32];
-        x6 = hextodec(x1, 6);
+        x6 = hextodec(x6, 6);
         y6 = ((short)pData[33] << 8) | pData[34];
-        y6 = hextodec(x1, 6);
+        y6 = hextodec(y6, 6);
         z6 = ((short)pData[35] << 8) | pData[36];
-        z6 = hextodec(x1, 6);
+        z6 = hextodec(z6, 6);
         
         x7 = ((short)pData[37] << 8) | pData[38];
-        x7 = hextodec(x1, 7);
+        x7 = hextodec(x7, 7);
         y7 = ((short)pData[39] << 8) | pData[40];
-        y7 = hextodec(x1, 7);
+        y7 = hextodec(y7, 7);
         z7 = ((short)pData[41] << 8) | pData[42];
-        z7 = hextodec(x1, 7);
+        z7 = hextodec(z7, 7);
 
         x8 = ((short)pData[43] << 8) | pData[44];
-        x8 = hextodec(x1, 8);
+        x8 = hextodec(x8, 8);
         y8 = ((short)pData[45] << 8) | pData[46];
-        y8 = hextodec(x1, 8);
+        y8 = hextodec(y8, 8);
         z8 = ((short)pData[47] << 8) | pData[48];
-        z8 = hextodec(x1, 8);
+        z8 = hextodec(z8, 8);
         
         x9 = ((short)pData[49] << 8) | pData[50];
-        x9 = hextodec(x1, 9);
+        x9 = hextodec(x9, 9);
         y9 = ((short)pData[51] << 8) | pData[52];
-        y9 = hextodec(x1, 9);
+        y9 = hextodec(y9, 9);
         z9 = ((short)pData[53] << 8) | pData[54];
-        z9 = hextodec(x1, 9);
+        z9 = hextodec(z9, 9);
 
         x10 = ((short)pData[55] << 8) | pData[56];
-        x10 = hextodec(x1, 10);
+        x10 = hextodec(x10, 10);
         y10 = ((short)pData[57] << 8) | pData[58];
-        y10 = hextodec(x1, 10);
+        y10 = hextodec(y10, 10);
         z10 = ((short)pData[59] << 8) | pData[60];
-        z10 = hextodec(x1, 10);
+        z10 = hextodec(z10, 10);
 
         x11 = ((short)pData[61] << 8) | pData[62];
-        x11 = hextodec(x1, 10);
+        x11 = hextodec(x11, 10);
         y11 = ((short)pData[63] << 8) | pData[64];
-        y11 = hextodec(x1, 10);
+        y11 = hextodec(y11, 10);
         z11 = ((short)pData[65] << 8) | pData[66];
-        z11 = hextodec(x1, 10);
+        z11 = hextodec(z11, 10);
 
         x12 = ((short)pData[67] << 8) | pData[68];
-        x12 = hextodec(x1, 10);
+        x12 = hextodec(x12, 10);
         y12 = ((short)pData[69] << 8) | pData[70];
-        y12 = hextodec(x1, 10);
+        y12 = hextodec(y12, 10);
         z12 = ((short)pData[71] << 8) | pData[72];
-        z12 = hextodec(x1, 10);    
+        z12 = hextodec(z12, 10);    
 
         x13 = ((short)pData[73] << 8) | pData[74];
-        x13 = hextodec(x1, 10);
+        x13 = hextodec(x13, 10);
         y13 = ((short)pData[75] << 8) | pData[76];
-        y13 = hextodec(x1, 10);
+        y13 = hextodec(y13, 10);
         z13 = ((short)pData[77] << 8) | pData[78];
-        z13 = hextodec(x1, 10);     
+        z13 = hextodec(z13, 10);     
 
         x14 = ((short)pData[79] << 8) | pData[80];
-        x14 = hextodec(x1, 10);
+        x14 = hextodec(x14, 10);
         y14 = ((short)pData[81] << 8) | pData[82];
-        y14 = hextodec(x1, 10);
+        y14 = hextodec(y14, 10);
         z14 = ((short)pData[83] << 8) | pData[84];
-        z14 = hextodec(x1, 10);  
+        z14 = hextodec(z14, 10);  
 
         x15 = ((short)pData[85] << 8) | pData[86];
-        x15 = hextodec(x1, 10);
+        x15 = hextodec(x15, 10);
         y15 = ((short)pData[87] << 8) | pData[88];
-        y15 = hextodec(x1, 10);
+        y15 = hextodec(y15, 10);
         z15 = ((short)pData[89] << 8) | pData[90];
-        z15 = hextodec(x1, 10);  
+        z15 = hextodec(z15, 10);  
 
         x16 = ((short)pData[91] << 8) | pData[92];
-        x16 = hextodec(x1, 10);
+        x16 = hextodec(x16, 10);
         y16 = ((short)pData[93] << 8) | pData[94];
-        y16 = hextodec(x1, 10);
+        y16 = hextodec(y16, 10);
         z16 = ((short)pData[95] << 8) | pData[96];
-        z16 = hextodec(x1, 10);  
+        z16 = hextodec(z16, 10);  
         tactilepoint.point1x = x1;
         tactilepoint.point1y = y1;
         tactilepoint.point1z = z1;
