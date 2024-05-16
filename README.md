@@ -16,8 +16,7 @@ sudo apt-get install ros-melodic-serial  #ros为melodic版本
 cd ~/catkin_ws && catkin_make
 source devel/setup.bash
 
-
-# get read 
+#read serial
 ls /dev/ttyACM0
 OR
 ls /dev/ttyUSB0
